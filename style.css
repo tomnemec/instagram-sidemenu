@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: rgb(117, 48, 117);
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+aside {
+  margin-left: 5px;
+  position: relative;
+  width: 100px;
+  height: 350px;
+  background: #bab8b8e0;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon {
+  margin: 10px 0;
+  cursor: pointer;
+  color: rgb(122, 8, 120);
+}
+.burger {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 5px;
+  right: 10px;
+}
+.burger:hover {
+  color: rgb(255, 255, 255);
+}
+.list {
+  position: absolute;
+  left: 25px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  color: rgb(122, 8, 120);
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.row:hover {
+  color: rgb(255, 255, 255);
+  scale: 1.2;
+}
+.row:hover .icon {
+  color: rgb(255, 255, 255);
+}
+.long {
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+.short {
+  width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
